@@ -33,7 +33,7 @@ class Calculator:
         self.Result = Exponentiation.exponent(a, b)
         return self.Result
 
-    def SqrRoot(self, a, b):
+    def nthRoot(self, a, b):
         self.Result = Root.root(a, b)
         return self.Result
 
