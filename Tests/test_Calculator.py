@@ -20,6 +20,16 @@ class MyTestCase(unittest.TestCase):
         result = self.calculator.Difference(1, 2)
         self.assertEqual(-1, result)
 
+    def test_calculator_return_multiplications(self):
+
+        result = self.calculator.Multiply(3, 3)
+        self.assertEqual(9, result)
+
+    def test_calculator_return_division(self):
+
+        result = self.calculator.Division(9, 3)
+        self.assertEqual(3, result)
+
     def test_calculator_access_difference_result(self):
         self.calculator.Difference(1, 2)
         self.assertEqual(-1, self.calculator.Result)

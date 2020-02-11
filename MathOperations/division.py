@@ -1,5 +1,5 @@
 class Division:
 
     @staticmethod
-    def divis(divstart, divend):
+    def divide(divstart, divend):
         return divstart / divend

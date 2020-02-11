@@ -1,5 +1,5 @@
 class Multiplication:
 
     @staticmethod
-    def multiplication(multstart, multend):
-        return mulstart * multend
+    def multiply(multstart, multend):
+        return multstart * multend
