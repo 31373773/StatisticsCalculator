@@ -10,13 +10,14 @@ class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.testData = getRandomNums(9, 1, 10, 10)
         self.statistics = Statistics()
+        print(self.testData)
 
     def test_instantiate_statistics_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_statistics_mean(self):
         mean = self.statistics.mean(self.testData)
-        self.assertEqual(mean, 5.666666666666667)
+        self.assertEqual(mean,  5.9 )
 
 if __name__ == '__main__':
     unittest.main()
