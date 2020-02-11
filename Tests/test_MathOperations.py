@@ -24,6 +24,15 @@ class MyTestCase(unittest.TestCase):
     def test_MathOperations_division(self):
         self.assertEqual(3, Division.divide(9, 3))
 
+    def test_MathOperations_exponent(self):
+        self.assertEqual(81, Exponentiation.exponent(9, 2))
+
+    def test_MathOperations_root(self):
+        self.assertEqual(3, Root.root(9, 2))
+
+    def test_MathOperations_log(self):
+        self.assertEqual(2, Logarithm.log(100, 10))
+
 
 if __name__ == '__main__':
     unittest.main()

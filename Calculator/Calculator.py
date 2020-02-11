@@ -22,6 +22,18 @@ class Calculator:
         self.Result = Multiplication.multiply(a, b)
         return self.Result
 
-    def Division(self, a, b):
+    def Divide(self, a, b):
         self.Result = Division.divide(a, b)
+        return self.Result
+
+    def Exponent(self, a, b):
+        self.Result = Exponentiation.exponent(a, b)
+        return self.Result
+
+    def Root(self, a, b):
+        self.Result = Root.root(a, b)
+        return self.Resut
+
+    def Log(self, a, b):
+        self.Result = Logarithm.log(a, b)
         return self.Result
