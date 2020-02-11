@@ -33,7 +33,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(81, result)
 
     def test_calculator_return_root(self):
-        result = self.calculator.Root(81, 2)
+        result = self.calculator.SqrRoot(81, 2)
         self.assertEqual(9, result)
 
     def test_calculator_return_log(self):
@@ -61,7 +61,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(8, self.calculator.Result)
 
     def test_calculator_access_root_result(self):
-        self.calculator.Root(81, 2)
+        self.calculator.SqrRoot(81, 2)
         self.assertEqual(9, self.calculator.Result)
 
     def test_calculator_access_log_result(self):

@@ -2,6 +2,9 @@ from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
 from MathOperations.multiplication import Multiplication
 from MathOperations.division import Division
+from MathOperations.exponentiation import Exponentiation
+from MathOperations.root import Root
+from MathOperations.logarithm import Logarithm
 
 
 class Calculator:
@@ -30,9 +33,9 @@ class Calculator:
         self.Result = Exponentiation.exponent(a, b)
         return self.Result
 
-    def Root(self, a, b):
+    def SqrRoot(self, a, b):
         self.Result = Root.root(a, b)
-        return self.Resut
+        return self.Result
 
     def Log(self, a, b):
         self.Result = Logarithm.log(a, b)
