@@ -4,6 +4,9 @@ from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
 from MathOperations.multiplication import Multiplication
 from MathOperations.division import Division
+from MathOperations.exponentiation import Exponent
+from MathOperations.root import Root
+from MathOperations.logarithm import Logarithm
 
 
 class MyTestCase(unittest.TestCase):
