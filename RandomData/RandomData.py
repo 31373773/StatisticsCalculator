@@ -1,11 +1,11 @@
 from numpy.random import seed
-from numpy.random import rand
+from numpy.random import randint
 
-def getRandomNums(seed, min, max, num):
-    seed(seed)
+def getRandomNums(seedNum, min, max, num):
+    seed(seedNum)
     randomData = []
     i = 1
     while i < num + 1:
-        randomData.append(rand(min, max))
+        randomData.append(randint(min, max))
         i += 1
     return randomData
