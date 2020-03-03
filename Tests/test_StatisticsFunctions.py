@@ -2,6 +2,8 @@ import unittest
 from StatisticFunctions.Mean import mean
 from StatisticFunctions.Median import median
 from StatisticFunctions.Mode import mode
+from StatisticFunctions.MeanDeviation import meanDeviation
+from StatisticFunctions.StandardDeviation import standardDeviation
 from RandomData.RandomData import getRandomNums
 
 class MyTestCase(unittest.TestCase):
@@ -17,3 +19,8 @@ class MyTestCase(unittest.TestCase):
     def test_StatisticFunctions_Mode(self):
         self.assertEqual(2, mode(self.testData))
 
+    def test_StatisticFunctions_MeanDeviation(self):
+        self.assertEqual(26.740000000000002, meanDeviation(self.testData))
+
+    def test_StatisticFunctions_StandardDeviation(self):
+        self.assertEqual(29.052495589880053, standardDeviation(self.testData))
