@@ -1,6 +1,7 @@
-from numpy import absolute, asarray
-from StatisticFunctions.Mean import mean
 from MathOperations.root import Root
+from StatisticFunctions.Variance import Variance
 
-def standardDeviation(data):
-   return Root.root((mean(absolute(asarray(data) - mean(data))**2)), 2)
+class StandardDeviation:
+   @staticmethod
+   def standardDeviation(data):
+      return Root.root(Variance.variance(data), 2)

@@ -1,24 +1,24 @@
 from Calculator.Calculator import Calculator
-from StatisticFunctions.Mean import mean
-from StatisticFunctions.Median import median
-from StatisticFunctions.Mode import mode
-from StatisticFunctions.MeanDeviation import meanDeviation
-from StatisticFunctions.StandardDeviation import standardDeviation
+from StatisticFunctions.Mean import Mean
+from StatisticFunctions.Median import Median
+from StatisticFunctions.Mode import Mode
+from StatisticFunctions.MeanDeviation import MeanDeviation
+from StatisticFunctions.StandardDeviation import StandardDeviation
 
 class Statistics(Calculator):
 
     def mean(self, data):
-        self.result = mean(data)
+        self.result = Mean.mean(data)
         return self.result
     def median(self, data):
-        self.result = median(data)
+        self.result = Median.median(data)
         return self.result
     def mode(self, data):
-        self.result = mode(data)
+        self.result = Mode.mode(data)
         return self.result
     def meanDev(self, data):
-        self.result = meanDeviation(data)
+        self.result = MeanDeviation.meanDeviation(data)
         return self.result
     def stdDev(self, data):
-        self.result = standardDeviation(data)
+        self.result = StandardDeviation.standardDeviation(data)
         return self.result
