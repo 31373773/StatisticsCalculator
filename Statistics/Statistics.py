@@ -4,6 +4,9 @@ from StatisticFunctions.Median import Median
 from StatisticFunctions.Mode import Mode
 from StatisticFunctions.MeanDeviation import MeanDeviation
 from StatisticFunctions.StandardDeviation import StandardDeviation
+from StatisticFunctions.Variance import Variance
+from StatisticFunctions.Quartiles import Quartiles
+from StatisticFunctions.Skewness import Skewness
 
 class Statistics(Calculator):
 
@@ -21,4 +24,16 @@ class Statistics(Calculator):
         return self.result
     def stdDev(self, data):
         self.result = StandardDeviation.standardDeviation(data)
+        return self.result
+
+    def var(self, data):
+        self.result = Variance.variance(data)
+        return self.result
+
+    def quart(self, data):
+        self.result = Quartiles.quartiles(data)
+        return self.result
+
+    def skew(self, data):
+        self.result = Skewness.skewness(data)
         return self.result
