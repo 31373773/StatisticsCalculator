@@ -7,4 +7,4 @@ class PickSeedList():
     def pickSeed(sd, lst):
         seed(sd)
 
-        return SelectItemList.pickItem(lst, 1)
+        return SelectItemList.pickItem(lst)

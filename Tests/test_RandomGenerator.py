@@ -43,8 +43,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_PickRandomNumber(self):
         lst = RandomList.listInt(0, 10, 5, 4)
-        result = SelectItemList.pickItem(lst, 1)
-        self.assertEqual(len(result), 1)
+        result = SelectItemList.pickItem(lst)
+        self.assertEqual(result, 7)
 
     def test_PickFromListNoSeed(self):
         lst = RandomList.listInt(0, 10, 10, 3)
@@ -59,7 +59,7 @@ class MyTestCase(unittest.TestCase):
     def test_PickSeedList(self):
         lst = RandomList.listInt(0, 10, 5, 4)
         result = PickSeedList.pickSeed(3, lst)
-        self.assertEqual(result, [1])
+        self.assertEqual(result, 1)
 
 
 

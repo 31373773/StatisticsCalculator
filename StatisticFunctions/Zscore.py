@@ -1,6 +1,8 @@
 from StatisticFunctions.StandardDeviation import StandardDeviation
 from StatisticFunctions.Mean import Mean
 from RandomGenerator.PickSeedList import PickSeedList
+from numpy import asarray
+
 
 class Zscore():
     @staticmethod
@@ -9,4 +11,4 @@ class Zscore():
         x = PickSeedList.pickSeed(sd, data)
         mn = Mean.mean(data)
         stdDev = StandardDeviation.standardDeviation(data)
-        return ((x-mn)/stdDev)
+        return (x-mn)/(stdDev)
