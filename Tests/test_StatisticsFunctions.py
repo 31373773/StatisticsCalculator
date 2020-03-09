@@ -47,7 +47,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(-188.54736842105262, Covariance.covariance(self.testData, self.testData2))
 
     def test_StatisticFunctions_ZScore(self):
-        self.assertEqual(2, Zscore.zscore(-0.7555289, self.testData))
+        self.assertEqual(-0.7555289, Zscore.zscore(self.testData))
 
     def test_StatisticFunctions_PopulationCorrelation(self):
         self.assertEqual(-0.22499088742463133, PopulationCorrelation.popCor(self.testData, self.testData2))

@@ -9,7 +9,7 @@ class Cochran():
     def cochran(sd, data, rnge):
 
 
-        z = Zscore.zscore(sd, data)
+        z = Zscore.zscore(data)
         p = PopulationProportion.proportion(sd, data, rnge)
         e = MarginError.margin(sd, data)
         q = 1 - p
